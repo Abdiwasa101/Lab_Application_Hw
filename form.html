@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> login page</title>
+</head>
+<style>
+  /*   body{
+        margin-top: 5rem;
+    } */
+
+    div{
+       
+        width: 350px;
+        line-height: 1.5;
+        background: gray;
+        border-radius: 20px;
+    }
+     .login_form h2{
+        margin-bottom: 2rem;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+       
+      
+    }
+   .login_form {
+     margin: 5rem auto;
+     text-align: center;
+        padding: 2rem;
+        font-size: 20px;
+        font-weight: 700
+      
+       
+    }
+    input{
+       margin: 1rem;
+        padding: 0.5rem;
+    }
+    .btn{
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        padding: 0.5rem 3rem;
+        cursor: pointer;
+        font-style: oblique;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <div class="login_form">
+  <h2>Registration Form</h2>
+  <form method="post"  action="connect.php">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br><br>
+
+    <input class="btn" type="submit" value="Submit">
+
+  </form>
+
+</div>
+</body>
+</html>
